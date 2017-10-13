@@ -52,7 +52,22 @@ class Producto extends CI_Controller
     }
     public function Actualizar($id)
     {
-    	echo "Actualizamos";
+     	if($_POST)
+     	{
+     		$foto = $_FILES['Foto'];
+    		if($this->Producto_model->actualizar_producto($id,$_POST['Nombre'],$_POST['Precio'],$_POST['Descripcion'],$_POST['Fecha_Vencimiento']) && $foto['error']==0)
+			{
+               $ruta_foto = "Fotos/{$id}.jpg";
+               move_uploaded_file($foto['tmp_name'], $ruta_foto);
+               $this->load->view('Productos/guardado');
+			}
+			
+     	}
+     	else
+     	{
+     		$this->load->view('Productos/error');
+     	}
+
     }
     
 

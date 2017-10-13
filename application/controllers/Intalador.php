@@ -92,6 +92,4 @@ class Intalador extends CI_Controller
 
 }
 
-
-
  ?>

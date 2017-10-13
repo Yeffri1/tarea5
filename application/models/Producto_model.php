@@ -16,6 +16,14 @@ class Producto_model extends CI_Model
 		return $v;
 	}
 	
+	function actualizar_producto($id,$Nombre,$Precio,$Descripcion,$Fecha_Vencimiento)
+	{
+		$r=$this->db->query("Update productos set Nombre='$Nombre',Precio=$Precio,Descripcion='$Descripcion',
+			Fecha_Vencimiento='$Fecha_Vencimiento' where Id=$id");
+		return $r;
+	}
+	
+	
 }
 
 

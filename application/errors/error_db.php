@@ -1,5 +1,4 @@
 <?php 
-  if (!defined('BASEPATH')) exit('No direct script access allowed');
   $CI =& get_instance();
   $CI->load->helper('url');
  ?>
@@ -11,6 +10,10 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 <body>
+	<div id="container">
+		<h1><?php echo $heading; ?></h1>
+		<?php echo $message; ?>
+	</div>
 <div class="container">
 	<center>
 <div class="col col-md-6">

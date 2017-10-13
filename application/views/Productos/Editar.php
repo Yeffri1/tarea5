@@ -6,13 +6,14 @@ plantilla::inicio();
 $CI =& get_instance();
  $result = $CI->db->query("Select * from productos where Id='{$Id}'");
  $data = $result->row();
+$miid=$data->Id;
  ?>
  <div class="container">
  <h3 class="h3">Editar Productos</h3>
 
 <div class="row">
   <div class="col col-md-6">
-         <form  action="<?php echo base_url('index.php?/Producto/Actualizar') ?>" method="post" enctype="multipart/form-data">
+         <form  action="<?php echo base_url("index.php?/Producto/Actualizar/$miid"); ?>" method="post" enctype="multipart/form-data">
           
 
           	<input readonly type="hidden" value="<?php echo $Id; ?>" class="form-control" name="id" >
