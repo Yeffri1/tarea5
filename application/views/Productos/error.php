@@ -11,7 +11,7 @@
 <center>
 	
 <h3 class="h3">Hubo un error al ejecutar la operacion</h3>
-<a href="" class="btn btn-info">Ir a inicio</a>
+<a href="<?php echo base_url(); ?>" class="btn btn-info">Ir a inicio</a>
 </center>
 </div>
 

@@ -1,5 +1,5 @@
 <?php 
-include('C:\AppServ\www\web\tarea5\application\views\master.php');
+include('application\views\master.php');
 plantilla::inicio();
 error_reporting(0);
 

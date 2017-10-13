@@ -1,6 +1,5 @@
 <?php 
-include('C:\AppServ\www\web\tarea5\application\views\master.php');
-//include('master.php');
+include('application\views\master.php');
 plantilla::inicio();
  ?>
 <div class="container">
@@ -18,7 +17,7 @@ plantilla::inicio();
 
           <div class="form-group input-group">
           	<span class="input-group-addon">Precio:</span>
-          	<input type="text" class="form-control"  name="Precio" placeholder="Ingresar Precio del Producto" required alt="Precio del Producto">
+          	<input type="number" class="form-control"  name="Precio" placeholder="Ingresar Precio del Producto" required alt="Precio del Producto">
           </div>
 
 
