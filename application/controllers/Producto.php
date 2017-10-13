@@ -1,5 +1,4 @@
 <?php 
-
 defined('BASEPATH') or exit('No direct script access allowed');
 class Producto extends CI_Controller
 {
@@ -21,19 +20,6 @@ class Producto extends CI_Controller
 	}
 
 
-
- //    function subir($archivo)
-	// {
- //          $fp = fopen($_FILES['Foto']['tmp_name'], 'r'); //Abrimos la imagen
-          
- //          $imagen = fread($fp, filesize($_FILES['Foto']['tmp_name'])); //Extraemos el contenido de la imagen
-          
- //          $imagen = addslashes($imagen);
-          
- //          fclose($fp); //Cerramos imagen
- //           return $imagen;
-      	
- //    }
 	public function guardar()
 	{
 		if($_POST)

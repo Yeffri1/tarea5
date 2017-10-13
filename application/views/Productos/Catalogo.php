@@ -1,13 +1,12 @@
 <?php 
 include('C:\AppServ\www\web\tarea5\application\views\master.php');
 plantilla::inicio();
+error_reporting(0);
 
-$id = isset($_GET['id'])? $_GET['id']:null;
 if($_GET['id'])
 {
-	echo $id;
+  echo $id;
 } 
-    
 function obtener_imgenes()
 {
   $CI =& get_instance();

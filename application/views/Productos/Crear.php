@@ -1,4 +1,6 @@
-<?php include('C:\AppServ\www\web\tarea5\application\views\master.php');
+<?php 
+include('C:\AppServ\www\web\tarea5\application\views\master.php');
+//include('master.php');
 plantilla::inicio();
  ?>
 <div class="container">

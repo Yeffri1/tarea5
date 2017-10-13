@@ -1,4 +1,5 @@
 <?php 
+  if (!defined('BASEPATH')) exit('No direct script access allowed');
 class plantilla 
 {
 	static $instancia = null;
@@ -27,7 +28,7 @@ class plantilla
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <!-- Custom styles for this template -->
-    <link href="C:/AppServ/www/web/tarea5/application/css/thumbnail-gallery.css" rel="stylesheet">
+    <link href="" rel="stylesheet">
 
   </head>
 
@@ -36,7 +37,7 @@ class plantilla
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Inicio</a>
+        <a class="navbar-brand" href="<?php echo base_url('index.php?/Producto/index'); ?>">Inicio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -49,12 +50,6 @@ class plantilla
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?php echo base_url('index.php?/Producto/Create'); ?>">Crear Producto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url('index.php?/Producto/index'); ?>">Catalogos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
         </div>

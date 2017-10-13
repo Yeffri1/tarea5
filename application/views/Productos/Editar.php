@@ -54,12 +54,10 @@ $CI =& get_instance();
          </div>
          <div class="col col-md-5">
 <div class='col-lg-3 col-md-4 col-xs-6'>
-  <a  class='d-block mb-4 h-100' href='#'>
   	<?php
   	$mi_id = $data->Id;
       echo "<img src='Fotos/{$mi_id}.jpg' heigth='300' width='400'>";
    ?>
-  </a>
 </div>
 </div>
 
